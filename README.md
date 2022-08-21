@@ -3,6 +3,10 @@
 ※ 精度はあまり期待しないでください  
 ※ 「の」、「も」、「り」、「を」、「ん」には対応していません  
 
+### サンプル  
+「あいうえお」と指文字表現したが、「えお」が認識されない    
+<img src="resource\LeapMotion_demo.gif" width=480>
+
 ## 実行方法
 ### Leap Motion SDK のインストール  
 1. [ultraleap releases](https://developer.leapmotion.com/releases/?category=orion)から`LEAP MOTION ORION 3.2.1`をダウンロード  
