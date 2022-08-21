@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="239.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fingerspelling_recognition.javafx.FXMLParameterSettingController">
+   <children>
+      <Pane layoutX="200.0" layoutY="89.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="254.0" prefWidth="186.0" spacing="8.0">
+               <children>
+                  <Pane prefHeight="75.0" prefWidth="330.0">
+                     <children>
+                        <VBox prefHeight="70.0" prefWidth="186.0">
+                           <children>
+                              <Label text="静止判定" />
+                              <HBox prefHeight="30.0" prefWidth="330.0">
+                                 <children>
+                                    <Label text="動き：">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField fx:id="move" prefHeight="25.0" prefWidth="59.0" />
+                                    <Label text="mm未満" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="20.0" prefWidth="310.0">
+                                 <children>
+                                    <Label text="時間：" />
+                                    <TextField fx:id="time" prefHeight="25.0" prefWidth="59.0" />
+                                    <Label text="ms間" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="45.0" prefWidth="330.0">
+                     <children>
+                        <VBox prefHeight="48.0" prefWidth="186.0">
+                           <children>
+                              <Label text="濁点の手の動き" />
+                              <HBox prefHeight="20.0" prefWidth="310.0">
+                                 <children>
+                                    <Label text="横の動き：" />
+                                    <TextField fx:id="side" prefHeight="25.0" prefWidth="59.0" />
+                                    <Label text="mm以上" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="45.0" prefWidth="330.0">
+                     <children>
+                        <VBox prefHeight="48.0" prefWidth="186.0">
+                           <children>
+                              <Label text="半濁点の手の動き" />
+                              <HBox prefHeight="20.0" prefWidth="310.0">
+                                 <children>
+                                    <Label text="縦の動き：" />
+                                    <TextField fx:id="height" prefHeight="25.0" prefWidth="59.0" />
+                                    <Label text="mm以上" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="45.0" prefWidth="330.0">
+                     <children>
+                        <VBox prefHeight="48.0" prefWidth="186.0">
+                           <children>
+                              <Label text="指の関節が真っすぐか" />
+                              <HBox prefHeight="20.0" prefWidth="310.0">
+                                 <children>
+                                    <Label text="角度：" />
+                                    <TextField fx:id="angle" prefHeight="25.0" prefWidth="59.0" />
+                                    <Label text="度以上で真っすぐ" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Button layoutX="167.0" layoutY="269.0" mnemonicParsing="false" onAction="#onEndInputClicked" text="OK" />
+            <Button layoutX="110.0" layoutY="269.0" mnemonicParsing="false" onAction="#onCancelInputClicked" text="Cancel" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

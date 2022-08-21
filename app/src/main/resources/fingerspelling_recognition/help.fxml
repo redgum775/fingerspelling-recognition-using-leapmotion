@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fingerspelling_recognition.javafx.FXMLHelpController">
+   <children>
+      <SplitPane dividerPositions="0.2987012987012987" prefHeight="700.0" prefWidth="1000.0">
+         <items>
+            <Pane minWidth="200.0" prefHeight="425.0" prefWidth="200.0" style="-fx-background-color: #eeeeee;">
+               <children>
+                  <VBox layoutX="14.0" layoutY="14.0" prefHeight="246.0" prefWidth="267.0" spacing="10.0">
+                     <children>
+                        <VBox prefHeight="106.0" prefWidth="217.0">
+                           <children>
+                              <Label text="ヘルプ">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Hyperlink onAction="#onDrawErrorClicked" prefHeight="35.0" prefWidth="222.0" text="手が正常に表示されない">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox prefHeight="140.0" prefWidth="120.0">
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="127.0" text="研究について">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Hyperlink onAction="#onTitleOnclicked" text="当研究とは">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Hyperlink onAction="#onBackgroundClicked" prefHeight="23.0" prefWidth="113.0" text="背景">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Hyperlink onAction="#onPurposeClicked" prefHeight="23.0" prefWidth="113.0" text="目的">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Hyperlink onAction="#onMethodClicked" prefHeight="23.0" prefWidth="113.0" text="手法">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Hyperlink onAction="#onHandSignClicked" prefHeight="35.0" prefWidth="235.0" text="指文字の認識精度">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="Q&amp;A">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Hyperlink onAction="#onSupportClicked" text="対応している指文字">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Hyperlink onAction="#onWeakClicked" text="読み取りにくい指文字">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Hyperlink onAction="#onQuestion3Clicked" text="一音の区切りの方法">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="リンク">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Hyperlink onAction="#onLeapClicked" text="Leap Motion">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Hyperlink>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <AnchorPane minWidth="400.0" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #eeeeff;">
+               <children>
+                  <Label fx:id="title" layoutX="28.0" layoutY="20.0" textFill="#4302ba" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="content" layoutX="51.0" layoutY="65.0" prefWidth="600.0" wrapText="true">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
