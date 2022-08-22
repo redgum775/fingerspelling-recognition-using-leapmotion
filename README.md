@@ -7,7 +7,10 @@
 「あいうえお」と指文字表現したが、「えお」が認識されない    
 <img src="resource\LeapMotion_demo.gif" width=480>
 
-## 実行方法
+## 実行方法  
+### OS  
+Windowsのみ対応しています。他プラットフォームは未検証です。  
+
 ### Leap Motion SDK のインストール  
 1. [ultraleap releases](https://developer.leapmotion.com/releases/?category=orion)から`LEAP MOTION ORION 3.2.1`をダウンロード  
 2. `Leap_Motion_Orion_Setup_win_3.2.1.exe`を実行  
